@@ -1,0 +1,11 @@
+.footer {
+    font-size: 14px;
+    color: #A5A5A5;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #404040;
+
+    & p { line-height: 18px; margin-bottom: 20px; }
+    & p:last-child { margin-bottom: 0; }
+    &__link { text-decoration: underline; }
+}

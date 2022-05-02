@@ -1,0 +1,8 @@
+@import "./variables.scss";
+
+
+/*Адаптив для шрифтов*/
+html, body { font-size: $text-mb; font-family: "Roboto Regular", Arial, Helvetica, sans-serif; }
+@media (min-width: $width-tb) { html, body { font-size: $text-tb; } }
+@media (min-width: $width-pc) { html, body { font-size: $text-pc; } }
+/*--------------------*/
