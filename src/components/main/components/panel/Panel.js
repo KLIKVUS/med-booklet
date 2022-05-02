@@ -8,10 +8,10 @@ function Panel() {
       <h1 className="main__title">Категорри травм</h1>
 
       <nav className="main__nav-category nav-category">
-        <NavLink to="/injury-categories/bleeding" className="nav-category__item">При кровотечении</NavLink>
-        <NavLink to="/injury-categories/burn" className="nav-category__item">При ожогах</NavLink>
-        <NavLink to="/injury-categories/frostbite" className="nav-category__item">При обморожении</NavLink>
-        <NavLink to="/injury-categories/foreign-bodies-in-the-respiratory-tract" className="nav-category__item">Инородные тела в дыхательных путях</NavLink>
+        <NavLink to="/med-booklet/injury-categories/bleeding" className="nav-category__item">При кровотечении</NavLink>
+        <NavLink to="/med-booklet/injury-categories/burn" className="nav-category__item">При ожогах</NavLink>
+        <NavLink to="/med-booklet/injury-categories/frostbite" className="nav-category__item">При обморожении</NavLink>
+        <NavLink to="/med-booklet/injury-categories/foreign-bodies-in-the-respiratory-tract" className="nav-category__item">Инородные тела в дыхательных путях</NavLink>
       </nav>
     </div>
   );

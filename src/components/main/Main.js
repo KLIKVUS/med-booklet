@@ -16,15 +16,15 @@ function Main() {
         <Router>
           <Panel />
           <Routes>
-            <Route path="/" element={<Navigate to="/injury-categories/bleeding" />}/>
-            <Route path="/injury-categories">
+            <Route path="/" element={<Navigate to="/med-booklet/injury-categories/bleeding" />}/>
+            <Route path="/med-booklet/injury-categories">
               <Route path="bleeding" element={<Content url="bleeding" />}/>
               <Route path="burn" element={<Content url="burn" />}/>
               <Route path="frostbite" element={<Content url="frostbite" />}/>
               <Route path="foreign-bodies-in-the-respiratory-tract" element={<Content url="foreign-bodies-in-the-respiratory-tract" />}/>
             </Route>
-            <Route path="/all-injuries" element={<Content url="" />}/>
-            <Route path='*' element={<Navigate to="/injury-categories/bleeding" />}/>
+            <Route path="/med-booklet/all-injuries" element={<Content url="" />}/>
+            <Route path='*' element={<Navigate to="/med-booklet/injury-categories/bleeding" />}/>
           </Routes>
         </Router>
       </section>

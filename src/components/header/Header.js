@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 
 import "./header.scss"
 
@@ -10,9 +10,9 @@ function Header() {
   return (
     <header className="header">
       <picture className="header__logo-wrapper">
-        <source srcSet="/images/logo/logo-tb.svg" media="(min-width: 768px)"/>
-        <source srcSet="/images/logo/logo-pc.svg" media="(min-width: 1280px)"/>
-        <img src="/images/logo/logo-mb.svg" alt="logo" className="header__logo"/>
+        <source srcSet="/med-booklet/images/logo/logo-tb.svg" media="(min-width: 768px)"/>
+        <source srcSet="/med-booklet/images/logo/logo-pc.svg" media="(min-width: 1280px)"/>
+        <img src="/med-booklet/images/logo/logo-mb.svg" alt="logo" className="header__logo"/>
       </picture>
       
       <section className="header__text-wrapper">
@@ -21,8 +21,8 @@ function Header() {
 
         <Router>
           <div className="header__nav-links nav-links">
-            <NavLink className="nav-links__link--highlighted scroll-to" to="/injury-categories/bleeding#main">категории травм</NavLink>
-            <NavLink className="nav-links__link scroll-to" to="/all-injuries#main">все травмы</NavLink>
+            <NavLink className="nav-links__link--highlighted scroll-to" to="/med-booklet/injury-categories/bleeding#main">категории травм</NavLink>
+            <NavLink className="nav-links__link scroll-to" to="/med-booklet/all-injuries#main">все травмы</NavLink>
           </div>
         </Router>
       </section>
