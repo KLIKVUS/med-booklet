@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { HashRouter as Router } from 'react-router-dom';
 import $ from 'jquery';
 
 import "./index.scss"
@@ -11,7 +12,6 @@ import Footer from './footer/Footer';
 function App() {
 	useEffect(() => {
 		$("a.scroll-to").on("click", function(e){
-			// e.preventDefault();
 			var anchor = $(this).attr('href').match("#[a-zA-Z]+")[0];
 			if (anchor) {
 				$('html, body').stop().animate({
@@ -22,11 +22,11 @@ function App() {
 	})
 
 	return (
-		<React.Fragment>
+		<Router>
 			<Header />
 			<Main />
 			<Footer />
-		</React.Fragment>
+		</Router>
 	)
 }
 

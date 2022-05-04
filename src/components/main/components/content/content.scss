@@ -1,18 +1,29 @@
 @import "../../../variables.scss";
 
 .content {
-    & li { list-style: disc; }
-    & h1 {
+    & li>:first-child::before {
+        content: "";
+        width: 1ch;
+        height: 1ch;
+        display: inline-block;
+        margin-right: 20px;
+        border-radius: 50%;
+        background: #555555;
+    }
+    & li h1 {
         margin-bottom: 10px;
         font-size: $subtitle-mb;
         font-family: "Roboto Medium", Arial, Helvetica, sans-serif;;
     }
-    & p, li {
+    & li, p {
         margin-bottom: 45px;
         &:last-child { margin-bottom: 0; }
     }
     & img {
         width: 100%;
+        max-width: 720px;
+        display: block;
+        margin: auto;
         margin-top: 35px;
     }
 }
@@ -20,11 +31,11 @@
 
 @media (min-width: $width-tb) {
     .content {
-        & h1 { font-size: $subtitle-tb; }
+        & li h1 { font-size: $subtitle-tb; }
     }
 }
 @media (min-width: $width-pc) {
     .content {
-        & h1 { font-size: $subtitle-pc; }
+        & li h1 { font-size: $subtitle-pc; }
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import "./header.scss"
 
@@ -19,12 +19,10 @@ function Header() {
         <h1 className="header__title">Что это такое?</h1>
         <p className="header__subtitle">Тут мы расскажем о важных навыках и способах для спасения жизни человека.</p>
 
-        <Router>
-          <div className="header__nav-links nav-links">
-            <NavLink className="nav-links__link--highlighted scroll-to" to="/med-booklet/injury-categories/bleeding#main">категории травм</NavLink>
-            <NavLink className="nav-links__link scroll-to" to="/med-booklet/all-injuries#main">все травмы</NavLink>
-          </div>
-        </Router>
+        <div className="header__nav-links nav-links">
+          <NavLink className="nav-links__link--highlighted scroll-to" to="/injury-categories/bleeding#main">категории травм</NavLink>
+          <NavLink className="nav-links__link scroll-to" to="/all-injuries#main">все травмы</NavLink>
+        </div>
       </section>
     </header>
   );

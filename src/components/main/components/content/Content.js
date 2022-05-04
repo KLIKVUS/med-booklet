@@ -9,10 +9,10 @@ function Content(props) {
   const [data, setData] = useState("Контент..");
   const converter = new Showdown.Converter()
 
-  const { url } = props;
-  if (url) {
+  const { fileName } = props;
+  if (fileName) {
     $.ajax({
-      url: `/med-booklet/cardsData/${url}.txt`,
+      url: `/med-booklet/cardsData/${fileName}.txt`,
       dataType: "text",
       success: (data) => setData(converter.makeHtml(data))
     }).done($('#content a').attr('target', '_blank'));
