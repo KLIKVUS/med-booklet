@@ -10,9 +10,9 @@ function Header() {
   return (
     <header className="header">
       <picture className="header__logo-wrapper">
-        <source srcSet="/med-booklet/images/logo/logo-tb.svg" media="(min-width: 768px)"/>
-        <source srcSet="/med-booklet/images/logo/logo-pc.svg" media="(min-width: 1280px)"/>
-        <img src="/med-booklet/images/logo/logo-mb.svg" alt="logo" className="header__logo"/>
+        <source srcSet="/images/logo/logo-tb.svg" media="(min-width: 768px)"/>
+        <source srcSet="/images/logo/logo-pc.svg" media="(min-width: 1280px)"/>
+        <img src="/images/logo/logo-mb.svg" alt="logo" className="header__logo"/>
       </picture>
       
       <section className="header__text-wrapper">

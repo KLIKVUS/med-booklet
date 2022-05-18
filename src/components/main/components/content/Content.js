@@ -12,7 +12,7 @@ function Content(props) {
   const { fileName } = props;
   if (fileName) {
     $.ajax({
-      url: `/med-booklet/cardsData/${fileName}.txt`,
+      url: `/cardsData/${fileName}.txt`,
       dataType: "text",
       success: (data) => setData(converter.makeHtml(data))
     }).done($('#content a').attr('target', '_blank'));

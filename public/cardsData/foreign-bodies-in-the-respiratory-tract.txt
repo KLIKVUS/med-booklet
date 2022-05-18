@@ -28,4 +28,4 @@
 Остановитесь, быстро оцените состояние ребенка. Если самостоятельное дыхание отсутствует, продолжайте цикл 2 вдоха — 30 нажатий, пока не прибудет помощь.
 
 
-[![Наложение жгута](/med-booklet/images/content-images/foreign-bodies-in-the-respiratory-tract-img-1.jpg)](https://e-derslik.edu.az/books/86/units/unit-5/page84.xhtml "Источник картинки")
+[![Наложение жгута](/images/content-images/foreign-bodies-in-the-respiratory-tract-img-1.jpg)](https://e-derslik.edu.az/books/86/units/unit-5/page84.xhtml "Источник картинки")
