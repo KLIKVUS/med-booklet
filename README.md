@@ -1,6 +1,5 @@
 <h1 align="center">:medical_symbol: Мед Буклет :medical_symbol:</h1>
-
-Этот сайт предназначен для быстрого доступа к информации о первой помощи.
+<p align="center">Этот сайт предназначен для быстрого доступа к информации о первой помощи.</p>
 <h6 align="center"><a href="https://med-booklet.vercel.app/" target="blank">Посмотреть сайт</a></h6>
 
 
